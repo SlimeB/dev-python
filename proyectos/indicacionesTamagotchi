@@ -1,0 +1,16 @@
+hacer un tamagotchi donde interactuen las siguientes variables, de esta forma
+
+las variables tienen 5 estados, donde 5 es el mejor y 0 es estar en la mierda, afectando otras variables
+
+comer: +1 hambre, -1 higiene y (luego limpia, con un 50% de que pase,-1 sueño)
+limpiar: +1 higiene y (si comió antes, con un 50% de que pase, -1 sueño)
+dormir: +1 sueño y -1 hambre
+
+si algunas de las variables antes dichas está en 0, empezará a afectar a las siguientes reduciendolos en 1
+las variables antes dichas tienes acciones que las arreglan, pero estas acciones afectan a los stats antes 
+dichos
+
+medicar: +1 salud y -1 animo
+jugar: +2 animo, -1 hambre, -1 higiene, (con un 25% de que pase, -1 sueño y con un 50% de que pasé, +1 salud)
+
+que salud o animo estén en 0 implica que el tamagotchi murió, o se escapó (respectivamente)
