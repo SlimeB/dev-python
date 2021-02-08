@@ -1,0 +1,14 @@
+def X():
+    def Y():
+        def Z():
+            z = "even"
+            z += y
+            return z
+        y = "more "     <
+        y += x          < esto está bien, puesto que "y" es creado antes de agregarle más cosas
+        y += Z()        <
+        return y
+    x = "spam " + Y()   < esto está mál, puesto que "x" no es creado previamente
+    return x
+
+print(X())
