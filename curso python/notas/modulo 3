@@ -1,0 +1,20 @@
+BASICO
+existenten diferentes tipos de datos, los textos, los booleanos y los numericos, los numericos se
+pueden dividir en 2 categorias, int (naturales) y float (decimales), por norma general no se puede
+mezclar en un parametro 2 tipos de datos diferentes
+
+print("hola" + 3)   < esto está mál, por que estás mesclando en un parametro 2 tipos de datos distintos
+print("hola", 3)    <esto está bien, por que estás aclarando que son parametros distintos
+print("hola" + "adios") < esto está bien, por que son mismo tipos de datos (string)
+
+una exepción a esta regla, sería los siguiente
+
+print("hola" * 3)   <aunque paresca que dará error, en realidad hará que el output sea "holaholahola"
+
+unas formas de poder organizar los textos en un string, podrían ser las siguientes
+
+nombre = input("¿cual es tu nombre?")
+print("hola " + nombre + ", ¿cómo estás?")      <esta es ineficiente y no decorrida
+print("hola {0}, ¿cómo estás?".format(nombre))  <esta es mejor que la anterior pero no es tán intuitiva
+print(f"hola {nombre}, ¿cómo estás?")           <esta es la mejor, por ser similar a la anterior, pero
+                                                 más intuitiva

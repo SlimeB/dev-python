@@ -1,0 +1,86 @@
+PROGRAMACIÓN ORIENTADA A OBJETOS
+
+gramatica
+class "nombre_objeto"(object)
+    def __init__(self, parametro1, parametro2, etc):
+        self.parametro1 = self/str/numero/booleano
+        self.parametro2 = self/str/numero/booleano
+        self.parametro etc... y así
+
+nombre_variable = nombre_objeto("nombre_variable", parametro1, parametro2, etc")
+
+es lo mismo decir:
+print("estamos vendiendo {0} y {1} a {0} y {1} precio respectivamente".format(objeto1.parametro1, objeto1.parametro2, objeto2.parametro1, objeto2.parametro2))
+                                                                                    esto sería 0 en el texto                    esto sería 1 en el texto
+
+a esto:
+print("estamos vendiendo {0.parametro1} y {1.parametro1} a {0.parametro2} y {1.parametro2} precio respectivamente".format(objeto1, objeto2))
+
+se le puede ingresar un nuevo parametro a un objeto, pero se debe ingresar como una variable
+nombre_objeto.parametro3 = self/str/numero/booleano
+
+las clases pueden tener metodos para poder hacer los datos dentro de un objeto más flexibles ejemplo:
+
+class "nombre_clase"(object):
+    def __init__(self, bla bla bla)
+        codigo
+    
+    def "nombre_metodo"(self, parametro1)   > concretamente esto es el metodo de la clase 
+    self.parametro1                         >
+
+nombre_variable = nombre_clase("nombre variable", parametros)
+nombre_variable.nombre_metodo(parametro1) --> concretamentente esto es para hacer la accion
+
+existe algo llamado property, que sirve para settear algún objeto, se puede expresar de la siguiente forma:
+
+nombre_variable = property(nombre_metodo1, nombre_metodo2, etc)
+
+o tambien:
+
+@property
+def nombre_metodo():
+    return nombre_variable
+
+en cierta forma el property actua como un return
+
+algo que existe en la programación orientada a objetos son las subclases, que les permite dar algunas
+propiedades a ciertas clases dentro del porgrama, por ponerlo de una forma, las aguilas y los pinguinos
+son aves, pero las aguilas pueden volar, mientras que los pinguinos no, las aves no voladoras podría ser
+una subclase, que en en vez de poder volar puedan nadar (como sería en el caso de los pinguinos), al igual
+que las aves voladoras
+
+class "nombre_clase"(object):
+    def __init__(self, bla bla bla)
+        codigo
+
+class "nombre_subclase"(nombre_clase):
+    def __init__(parametros):
+        codigo
+
+la subclase al venir de la clase, gana de forma automatica todas las caracteristicas de la clase, volviendo al
+ejemplo de las aves, los pinguinos y las aguilas pueden poner huevos, tienen pico, alas y plumas, pero la
+mayor diferencia es que los pinguinos pueden nadar, mientras que las aguilas no
+
+en la programación orientada a objetos existe algo llamado polimorfismo
+que consiste en tratar una clase b, como si fuera la clase a, esto
+se puede hacer por un propiedad de las funciones, donde se le puede
+ingresar cualquier cosa, y la función lo interpretará como que si fuese
+lo que se pide, en el caso de las clases, esto siempre y cuando los
+metodos de las clases compartan nombre
+
+class A():
+    def metodo1():
+        codigo
+
+class B():
+    def metodo1():
+        codigo
+
+def función(C): <en este caso, ni siquiera pide la clase A o B, pero funcina, por que las clases 
+    C.metodo1() <comparten el nombre del metodo1 y la función interpretará C, como un nombre
+
+a = A()
+función(a)
+
+b = B()
+función(b)
