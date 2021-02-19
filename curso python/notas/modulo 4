@@ -1,0 +1,35 @@
+BLOQUES DE CODIGO
+
+python a diferencia de otros lenguajes de programación diferencia un bloque de codigo de otros
+deacuerdo al espaciado es decir con el tab 
+
+4 espacios = 1 tab
+
+un condicional if siempre será revizado de arriva a abajo y se escribe de la siguiente forma:
+
+if condición:
+    codigo
+elif 2da condición o 2do caso de la primera condición:
+    codigo
+else:
+    codigo
+
+el range funciona de forma similar al indexar
+
+range(inicio (0 en su defecto), fin, salteado)
+
+una de las cosas a favor de usar python es la gran libreria que tiene, cosas somo crear un numero al azar,
+reconocer la hora o crear una ventana de tu programa se resuelven llamando a la libreria que buscas
+por norma general para llamarlos se usa alguno de los siguientes codigos
+
+import libreria_deseada                         <esto trae todas las funciones dentro de la libreria
+import libreria_deseada as nombre_que_quieras   <esto tiene la ventaja de que se adapta a tu sistema
+from libreria_deseada import funcion_deseada    <esto trae SOLO la función dicha de la libreria deseada 
+
+algo curioso de los while loops es que al funcionar basicamente por una condicional es que pueden tener
+un bloque else
+
+while condicion:
+    codigo que se ejecutará mientras la condición se cumpla o sea True
+else:
+    codigo que se ejecutará cuando la condición pase a ser False

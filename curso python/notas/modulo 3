@@ -17,4 +17,38 @@ nombre = input("¿cual es tu nombre?")
 print("hola " + nombre + ", ¿cómo estás?")      <esta es ineficiente y no decorrida
 print("hola {0}, ¿cómo estás?".format(nombre))  <esta es mejor que la anterior pero no es tán intuitiva
 print(f"hola {nombre}, ¿cómo estás?")           <esta es la mejor, por ser similar a la anterior, pero
-                                                 más intuitiva
+                                                 más intuitiva, pero menos flexible que la anterior
+
+existen las operaciones numericas, todas las de siempre:
++   suma
+-   resta
+*   multiplicación
+/   divición
+
+pero existen algunas un poco más curiosas:
+**  potencias
+//  divición en int (solo dará resultados en int, aunque sea aproximando)
+%   modular (el output será lo que sobre de hacer una divicón entre dos numeros)
+
+aunque no lo paresca, un string no es más que una lista con todos los caracteres que le pusiste
+por ejemplo:
+
+"hola mundo"    <se puede interpretar como (h,o,l,a, ,m,u,n,d,o)
+ 0123456789     <y se podría acceder a cada parte de la lista con uno de estos numeros o con numeros
+                 negativos,, suponiendo que el 9 sería el -1 y el 0 sería el -10
+
+msg = "hola"
+print(msg[3])   <daría "a"
+print(msg[-2])  <daría "d"
+
+¿como funciona indexar? simple usando el caso anterios como ejemplo sería
+
+msg[inicio:fin:salteado]
+
+bajo esta logica, inicio sería la "h", fín la "a" y el salteado cuantas se salta de la variable, por ejemplo:
+
+print(msg[::2]) <daría "hl"
+print(msg[1::2])    <daría "oa"
+
+la información antes dicha funciona tambien con listas en general, siempre tomando en cuenta la longitud
+de la lista
