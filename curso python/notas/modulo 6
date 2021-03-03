@@ -1,0 +1,50 @@
+a pesar de todas las librerias de python, siempre uno puede crear su propia funcion, para que haga lo
+que uno busca, la forma de hacer una función es:
+
+def nombre_función(parametro1, parametro2, etc):
+    codigo
+
+nombre_función()
+
+return es una función que solo es posible usarla dentro de una función, está lleva a una salida la
+función regresando la información de lo que prosesaba la funcion por ejemplo:
+
+def suma(int):
+    return sum(range(int+1))    <aquí el return entrga inmediatamente el resultados, mientras que un print
+                                 primero esperaría a que no haya ningun codigo extra en la función y luego
+                                 diría el resultado
+
+suma(5) <esto dará 15, 0 + 1 + 2 + 3 + 4 + 5 = 15
+
+algo que se puede hacer a las funciones es ponerle a los parametros un valor por defecto,
+eso queiere decir que deja de ser necesario que lo pongas a la hora de llamar la función por que
+usará el valor que existe en su defecto
+
+def suma(x = 0,y = 0):
+    codigo
+
+suma()  <en este caso daría 0, puesto que x e y valen 0
+
+dentro de python en general existe algo llamado docstring, normalmente se usa para documentar que hace
+el programa, o que hace cada parametro en una función, se suele usar en funciones precisamente para
+estas dos cosas, documentar que hace cada función y que es cada parametro, ademas de que retorna la
+función, por ejemplo:
+
+def suma(x: int, y: int) -> int:    <fijarse que aquí se especifica que x e y son variables de tipo int
+    """
+        Args:                       <aquí se especifican las argumentos de la función
+            x: un numero
+            y:otro numero
+        Returns: la suma de x e y   <aquí se especifica lo que entrega la función
+    """
+    codigo
+
+suma(1,1)
+
+en python se puede volver opcional el argumento de una variable, o incluso que pueda reconocer varios 
+argumentos como el mismo, de una forma muy simple
+
+def suma(x, *y = 0):    <el meramente ponerle el "*" antes del argumento lo vuelve opcional, OJO opcional
+                         no es lo mismo a tener un valor por defecto, el asterisco tambíen hace que pueda
+                         reconocer varios argumentos como el mismo
+    codigo

@@ -1,0 +1,14 @@
+se puede crear archivos de texto como un output en python:
+
+nombre_variable = open("nombre_archivo.txt", acción)
+
+nombre_variable.close() <importante este paso, por que si no, da error
+
+solo se puede crear archivos de texto, pero se le agrega el .txt por el formato, puesto que un .py es
+un .txt que tiene codigo de python y que solo lo puede entender python, lo mismo con los .js, de querer
+evitar que la computadora interprete el archivo como codigo, mejor usar el fomrato .txt
+
+sobre las acciones no hay muchas:
+-'r' = leer un archivo
+-'w' = creaar un archivo, que diga lo especificado en el programa 
+- 'br' y 'bw' = leer y escribir en binario, respectivamente

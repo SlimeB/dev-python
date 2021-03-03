@@ -1,0 +1,56 @@
+algunas formas de guardar información, más información que las variables, son las listas y los tuples
+y se hacen de la siguiente forma:
+
+nombre_lista = [elemento1, elemento2, elemento3, etc]   <fijarse que los elementos están en [], y que
+                                                         se separan por comas
+
+funcionan con el indexing, explicado en modulo 3
+
+algunas formas de agregar elementos a una lista es directamente sumandolos de la siguiente forma:
+
+elementoX = input()
+nombre_lista += elementoX   <esta es frecuente y facil de usar
+nombre_lista.append(elementoX)  <esta es otra forma
+
+una forma de quitar elementos de una lista sería:
+
+nombre_lista.remove(elementoX)  <usar este comando sin que el elemento esté en la lista dará un error
+
+y claro, tambien hay una forma de ordenarlas, siendo esa la siguiente:
+
+nombre_lista.sort() <el orden por defecto es de forma acendente, aunque eso puede cambiar escribiendo
+                     dentro del parentecis "reverse = True" y directamente creando tu propia función
+                     con la froma de ordenar que buscas
+sorted(nombre_lista)    <es el equivalente al anterior
+
+puedes remplazar elementos de una lista usando el index:
+
+nombre_lista[1] = elementoZ <esto hará que el elemento2 se convierta en el elementoZ
+nombre_lista[1:3] = elementoZ   <esto hará que todos los elementos en el intervalo sean elementoZ
+
+algo que se puede hacer en las listas es hacerlas "bidimencionales", o poner varias listas dentro de otra
+eso se haría de la siguiente froma
+
+lista1 = [[elemento01, elemento02, elemento03, etc], [elemento11, elemento12, elemento13, etc], etc]
+
+y el indexar en python a una lista bidimencional sería:
+
+lista1[lista][elemento] <por ejemplo si dijera lista1[0] sería elemento01, elemento02,elemento03 y etc
+                         y si detallara más diciendo lista1[1][2] sería elemento13
+
+los tuples son iguales a las listas, solo que estos no pueden ser alterados fuera del codigo
+
+nombre_tuple = (elemento01, elemento02, etc)    <fijarse que a diferencia de la lista, se usan parentecis
+                                                 normales, y no cuadrados
+
+una de las cosas más importante de python es la gran cantidad de librerias que tiene
+hay pocas cosas que no tenga python gracias a sus librerias, tiene funciones para manejar el tiempo,
+funciones relacionadas al azar, a la geometría, entre otras, la forma de traer una libreria a tu 
+programa es:
+
+import nombre_libreria  <así de simple, con esto estás trayendo todo lo que contiene la librería
+inport nombre_libreria as apodo_libreria    <está es la forma de tu ponerle un nombre a la libreria
+                                             en tu programa
+from nombre_libreria import funcion_de_la_libreria  <con esto SOLO estás trayendo una función o dato
+                                                     de la libreria, a esto también se le puede
+                                                     aplicar el ponerle un apodo "as"

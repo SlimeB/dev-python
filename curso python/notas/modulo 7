@@ -2,3 +2,43 @@ ESTRUCTURAS DE DATOS
 
 existen las listas, los tuples, los diccionarios y los sets, todas son formas de almacenar más
 información de la que puede almacenar una variable
+
+las listas y los tuples los emos visto en modulo 5, ahora es turno de los diccionarios y los sets,
+estas dos a diferencia de las listas y los sets, los diccionarios funcionan en base a  "keys"
+en otras palabras para indexar a un elemento puedes usar la kye en vez de indexar, esto lo hace
+más intuitivo que las listas, aunque puede ser un poco más confuso si no haces el nombre
+intuitivo
+
+nombre_diccionario = {"naranja" : "fruta redonda y de color naranja2, "pera" : "fruta jugosa de color verde",
+                      etc}
+
+hay que fijarse que los diccionarios se pueden dividir en 2 partes la llave, y el valor de la llave, y
+siempre tiene la misma estructura, (key : valor), la llave puede ser un int o un str, mientras que el valor
+puede ser incluso una lista
+
+una forma de poder acceder a las keys de un diccionario es:
+
+nombre_diccionario.keys()
+
+y para los valores de cada llave puedes usar más formas, pero las más comodas son usar las llaves
+como un index normal, o hacer los siguiente:
+
+nombre_diccionario.values()
+
+los sets simplemente son mochilas de información, no tienen ningún orden y no se pueden indexar
+a diferencia de los dicionarios, que igualmente no tienen orden, pero tienen las llaves para poder
+ser indexadas
+
+nombre_set = {elemento01, elemento02, elemento03}
+nombre_set2 = set(elemento01, elemento02, elemento03)
+
+imprimir un set no necesariamente será en el orden en que está programado, de hecho imprimir
+varias veces el mismo set te puede dar resultados diferentes cada intento
+
+algo que se le puede hacer a los sets es el filtrar los elementos que son imprimidos, eso se puede
+hacer de la siguiente forma.
+
+print(nombre_set.intersection(nombre_set2))     <esto hace que se impriman solo las que comparten
+print(nombre_set & nombre_set2)                 <lo mismo pasa con esta
+
+print(nombre_set.union(nombre_set2))    <esto hace que se impriman todos los elementos de ambos grupos
